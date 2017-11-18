@@ -5,62 +5,56 @@ Tweet right from your cli without even opening your browser.
 
 <!-- [![Build Status](https://travis-ci.org/CruiseDevice/twweet-cli.svg?branch=master)](https://travis-ci.org/CruiseDevice/twweet-cli) -->
 
-## Install
+**Requires Python 3.x**
 
-### Build from Source
+## Features
+* Tweet from the command line without opening the browser
+* Change authentication tokens for Twitter app
+* Get your tweets
+* Get tweets of any user by providing the username
+* Get tweets of a particular hashtag by providing the same
+* Get trending topics on Twitter
+* Get tweets in your timeline
+* Get your follower list and their respective username
+<br />
 
-**Install the dependencies**
+## Before installing
+Before installing twweet-cli, make sure that:
+* Python 3.x is installed
+* pip is installed (pip3 for Linux users)
+* You have a Twitter account and have created a Twitter "app" with the following keys generated (navigate to https://apps.twitter.com/ to create an app)
+  * Consumer key (API key)
+  * Consumer secret (API secret)
+  * Access token
+  * Access toekn secret
+<br />
 
-`$ pip install tweepy`
+## Installation
+To install twweet-cli, build the software from source using the following steps.
 
-**Clone the source**
+### Linux
+<pre>git clone https://github.com/CruiseDevice/twweet-cli.git
+cd twweet-cli
+pip3 install -r requirements.txt
+python3 setup.py install</pre>
 
-`$ git clone https://github.com/CruiseDevice/twweet-cli.git`
-
-**Navigate to the tweet-cli folder**
-
-`$ cd twweet-cli`
-
-**Now run setup.py file.**
-
-For Linux users:
-`$ sudo python3 setup.py install`
-
-For Windows users:
-`$ sudo python setup.py install`
-
-**Create a Twitter "App"**
-
-Log in to https://apps.twitter.com/ to create a new app and generate your OAuth credentials:
-
-* Consumer Key (API Key)
-* Consumer Secret (API Secret)
-* Access Token
-* Access Token Secret
-
-**Run the application**
-
-`$ twweet-cli`
-
-**_Note: Requires Python 3.x_**
+### Windows 
+<pre>git clone https://github.com/CruiseDevice/twweet-cli.git
+cd twweet-cli
+pip3 install -r requirements.txt
+python3 setup.py install</pre>
+<br />
 
 ## Usage
+To run twweet-cli, type the command `twweet-cli` in your terminal.
 
-* type ` twweet` to post a tweet.
-* type ` get` to get different types of information from twitter. A menu will be provided to choose for your choice of             information.
-* type ` edit` to change your Ouath credentials.
-* type ` 99` to quit the application. 
-
+Options:
+* `twweet`: post a tweet
+* `get`: get different types of information from Twitter (menu will be displayed with further options)
+* `edit`: change your OAuth credentials (set up at install time)
+* `99`: quit the application
+<br />
 
 ## Contributing
-
-### Features present
-
-* tweet from your CLI without opening the browser.
-* Changing `Consumer Key`  `Consumer Secret`  `Access Token`  `Access Token Secret` keys for twweet-cli. 
-* geting the tweets of any user by providing the username.
-* getting the tweets of a particular hashtag by providing the same.
-* getting the trending topics on twitter. 
-* getting the tweets in your timeline.
-* getting your follower list and their respective user name on twitter(number of followers to be displayed can be assigned).
-* getting your own tweets(number of tweets to be displayed can be assigned).
+To contribute, have a look at the open issues and [join the Gitter](https://gitter.im/twweet-cli/Lobby).
+<br />
